@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Robert Gama</title>
@@ -7,13 +8,14 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 </head>
+
 <body>
     <nav class="nav-container">
         <div class="left-logos">
             <object class="gh-logo" data="/assets/githublogo.svg" type="image/svg+xml"></object>
             <object class="linked-logo" data="/assets/linkedinlogo.svg" type="image/svg+xml"></object>
         </div>
-        <div class="divider"></div>        
+        <div class="divider"></div>
         <div class="right-logos">
             <span>Skills</span>
             <span>About</span>
@@ -28,20 +30,21 @@
     </header>
     <main>
         <h1>Tool Set</h1>
-        <div class="container d-flex justify-content-center">
+        <div class="container card d-flex justify-content-center">
             <div class="row">
                 <div class="col-sm">
                     <div class="card-content">
                         <div class="card-front">
                             <img class="card-img" src="/assets/languagelogo.png" alt="Language">
-                            <h3>Programming <br /> Languages</h3>
-                        </div>
-                        <div class="card-back">
-                            <ul>
-                                <li>Javascript</li>
-                                <li>HTML+CSS</li>
-                                <li>Python</li>
-                            </ul>
+                            <div class="card-body">   
+                                <p>
+                                    <h4>Programming <br /> Languages</h4>
+                                    Javascript  <br />
+                                    HTML        <br />
+                                    CSS         <br />
+                                    Python      <br />
+                                </p> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -49,14 +52,15 @@
                     <div class="card-content">
                         <div class="card-front">
                             <img class="card-img" src="/assets/frameworks.png" alt="Language">
-                            <h3>Frameworks + <br /> Libraries</h3>
-                        </div>
-                        <div class="card-back">
-                            <ul>
-                                <li>ReactJS</li>
-                                <li>Bootstrap</li>
-                                <li>Flask</li>
-                            </ul>
+                            <div class="card-body">
+                                <p>
+                                    <h4>Frameworks +<br />
+                                        Libraries</h4>
+                                    ReactJS <br />
+                                    Bootstrap <br />
+                                    Flask <br />
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -64,23 +68,49 @@
                     <div class="card-content">
                         <div class="card-front">
                             <img class="card-img" src="/assets/othertoolslogo.png" alt="Language">
-                            <h3>Other <br /> Tools</h3>
-                        </div>
-                        <div class="card-back">
-                            <ul>
-                                <li>VS Code</li>
-                                <li>Adobe XD</li>
-                                <li>Git + Github</li>
-                            </ul>
+                            <div class="card-body">
+                                <p>
+                                    <h4>Other <br /> Tools</h4>
+                                    VS Code <br />
+                                    Adobe XD <br />
+                                    Git + Github <br />
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
+
+        <div class="container about">
+            <div class="row">
+                <div class="col">
+                    <h1>About Me</h1>
+                    <div class="about-card">
+                        <div class="about-content">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h1>Reach Out</h1>
+                    <form method="POST" action="https://formspree.io/robertgama.wd@gmail.com" class="reachout-form">
+                        Email:<br />
+                        <input type="email" name="email" placeholder="example@email.com">
+                        Full Name:<br />
+                        <input type="text" name="name">
+                        Message: <br />
+                        <textarea name="message" cols="30" rows="10"></textarea>
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
 
     </footer>
 </body>
-</html> 
+
+</html>
