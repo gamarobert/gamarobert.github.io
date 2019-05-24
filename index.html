@@ -11,10 +11,6 @@
 
 <body>
     <nav class="nav-container">
-        <div class="left-logos">
-            <object class="gh-logo" data="/assets/githublogo.svg" type="image/svg+xml"></object>
-            <object class="linked-logo" data="/assets/linkedinlogo.svg" type="image/svg+xml"></object>
-        </div>
         <div class="divider"></div>
         <div class="right-logos">
             <span>Skills</span>
@@ -30,20 +26,20 @@
     </header>
     <main>
         <h1>Tool Set</h1>
-        <div class="container card d-flex justify-content-center">
+        <div class="container card">
             <div class="row">
                 <div class="col-sm">
                     <div class="card-content">
                         <div class="card-front">
                             <img class="card-img" src="/assets/languagelogo.png" alt="Language">
-                            <div class="card-body">   
+                            <div class="card-body">
                                 <p>
                                     <h4>Programming <br /> Languages</h4>
-                                    Javascript  <br />
-                                    HTML        <br />
-                                    CSS         <br />
-                                    Python      <br />
-                                </p> 
+                                    Javascript <br />
+                                    HTML <br />
+                                    CSS <br />
+                                    Python <br />
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -82,26 +78,31 @@
             </div>
         </div>
 
-        <div class="container about">
+        <div class="container card about">
             <div class="row">
-                <div class="col">
+                <div class="col-sm-6">
                     <h1>About Me</h1>
                     <div class="about-card">
+                        <img class="about-card-img" src="/assets/languagelogo.png" alt="Language">
                         <div class="about-content">
 
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-6">
                     <h1>Reach Out</h1>
-                    <form method="POST" action="https://formspree.io/robertgama.wd@gmail.com" class="reachout-form">
-                        Email:<br />
-                        <input type="email" name="email" placeholder="example@email.com">
-                        Full Name:<br />
+                    <form method="POST" action="https://formspree.io/robertgama.wd@gmail.com"
+                        class="d-flex flex-column justify-content-between reachout-form">
+                        <label>Email</label>
+                        <input type="email" name="email">
+
+                        <label>Full Name</label>
                         <input type="text" name="name">
-                        Message: <br />
-                        <textarea name="message" cols="30" rows="10"></textarea>
-                        <button type="submit"></button>
+
+                        <label>Message</label>
+                        <textarea name="message"></textarea>
+
+                        <button class="submit-button" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
@@ -109,7 +110,11 @@
     </main>
 
     <footer>
-
+        <hr>
+        <div class="social-logos">
+            <object class="gh-logo" data="/assets/githublogo.svg" type="image/svg+xml"></object>
+            <object class="linked-logo" data="/assets/linkedinlogo.svg" type="image/svg+xml"></object>
+        </div>
     </footer>
 </body>
 

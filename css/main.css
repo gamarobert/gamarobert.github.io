@@ -6,7 +6,7 @@ html {
     background-color: #EFEFEF;
 }
 
-/* Mountains  */
+/* Mountains */
 .mountains-container {
     display: flex;
     justify-content: center;
@@ -16,7 +16,6 @@ html {
     width: 75%;
     height: 75%;
     margin-top: 6%;
-    align: bottom;
 }
 
 /* Navbar  */
@@ -28,12 +27,12 @@ html {
     flex-direction: row;
 }
 
-.left-logos {
-    display: inline-flex;
-    margin-left: 10px;
+.social-logos {
+    display: flex;
+    justify-content: center;
 }
 
-.left-logos>object {
+.social-logos>object {
     width: 30px;
     margin-left: 30px;
 }
@@ -80,15 +79,11 @@ header>h4 {
 
 /* Tool Set */
 
-main>h1 {
+main h1 {
     display: flex;
     justify-content: center;
     margin-top: 10%;
     color: #FA7376;
-}
-
-main>.container {
-    border: solid yellow;
 }
 
 .col-sm {
@@ -101,6 +96,7 @@ main>.container {
     height: 350px;
     width: 300px;
     margin-top: 15%;
+    margin: 0 auto;
     text-align: center;
     color: white;
     font-size: 1.4em;
@@ -112,11 +108,10 @@ main>.container {
 
 .card-img {
     height: 100px;
-    /* margin-top: 25%; */
     position: absolute;
     top: -30px;
     left: -30px;
-    border-radius: 50%; 
+    border-radius: 50%;
     box-shadow: 0px 5px 5px rgb(141, 63, 63);
 }
 
@@ -125,17 +120,16 @@ main>.container {
 }
 
 /* About Section */
-
-.container>.row {
-    text-align: center;
+.test {
+    border: solid black;
 }
+
 .about-card {
     background-color: #CE7A7A;
     border-radius: 15px;
     height: 350px;
-    width: 600px;
-    margin: 15% 0 0 7%;
-    text-align: center;
+    max-width: 100%;
+    /* text-align: center; */
     color: white;
     font-size: 1.4em;
     box-shadow:
@@ -144,7 +138,58 @@ main>.container {
     position: relative;
 }
 
+.about-card-img {
+    height: 125px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px rgb(141, 63, 63);
+}
+
+/* Reachout Form */
+
+.reachout-form {
+    font-family: monospace;
+    height: 300px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.reachout-form>input,
+textarea {
+    background: transparent;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #FF3B3F;
+}
+
+.submit-button {
+    font-family: monospace;
+    width: 35%;
+    height: 10%;
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 5px;
+    border: solid #FA7376 1px;
+}
+
+.submit-button:hover {
+    background-color: #FA7376;
+    cursor: pointer;
+    color: #EFEFEF;
+}
 /* Footer */
 footer {
-    height: 100px;
+    margin: 50px 0 5px 0;
+}
+
+footer h1 {
+    color: #FA7376;
+}
+
+footer>hr {
+    width: 85%;
+    margin: 0 auto;
+    border: solid #FA7376 1px;
 }
