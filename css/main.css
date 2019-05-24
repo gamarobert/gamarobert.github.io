@@ -5,6 +5,20 @@ html {
     padding: 0;
     background-color: #EFEFEF;
 }
+/* All Links */
+a:link {
+    color: #FF3B3F;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FF3B3F;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 /* Mountains */
 .mountains-container {
@@ -27,16 +41,6 @@ html {
     flex-direction: row;
 }
 
-.social-logos {
-    display: flex;
-    justify-content: center;
-}
-
-.social-logos>object {
-    width: 30px;
-    margin-left: 30px;
-}
-
 .divider {
     flex-grow: 1;
 }
@@ -53,6 +57,7 @@ html {
 .right-logos>span {
     margin-right: 30px;
 }
+
 
 /* Name */
 header>h1 {
@@ -162,6 +167,7 @@ textarea {
     outline: 0;
     border-width: 0 0 2px;
     border-color: #FF3B3F;
+    font-size: 12px;
 }
 
 .submit-button {
@@ -181,7 +187,8 @@ textarea {
 }
 /* Footer */
 footer {
-    margin: 50px 0 5px 0;
+    height: 20%;
+    margin-top: 5%;
 }
 
 footer h1 {
@@ -192,4 +199,20 @@ footer>hr {
     width: 85%;
     margin: 0 auto;
     border: solid #FA7376 1px;
+}
+
+.social-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.social-logos img {
+    width: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.social-logos img:hover {
+    width: 45px;
 }
