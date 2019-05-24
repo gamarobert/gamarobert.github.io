@@ -125,10 +125,6 @@ main h1 {
 }
 
 /* About Section */
-.test {
-    border: solid black;
-}
-
 .about-card {
     background-color: #CE7A7A;
     border-radius: 15px;
@@ -152,6 +148,10 @@ main h1 {
     box-shadow: 0px 5px 5px rgb(141, 63, 63);
 }
 
+.about-content>p {
+    padding: 20% 10%;
+}
+
 /* Reachout Form */
 
 .reachout-form {
@@ -167,7 +167,7 @@ textarea {
     outline: 0;
     border-width: 0 0 2px;
     border-color: #FF3B3F;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .submit-button {
